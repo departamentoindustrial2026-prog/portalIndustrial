@@ -168,7 +168,7 @@ HERO
 }
 
 .hero h1{
-    font-size:4.5rem;
+    font-size:3.5rem;
     line-height:1.1;
     margin-bottom:20px;
 }
@@ -209,12 +209,100 @@ HERO
     color:white;
 }
 
-.hero-image img{
-    width:400px;
-    max-width:100%;
-    height:auto;
+
+
+
+.hero {
+
+    min-height: 75vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #002b6b,
+        #0044aa
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 140px 8% 80px;
+
+    color: white;
 }
 
+/* Contenido del Hero */
+.hero-content {
+    width: 55%;
+}
+
+/* Imagen del Hero */
+.hero-image {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+
+    width: 100%;
+    max-width: 300px;
+
+    height: auto;
+
+    border-radius: 25px;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.18);
+}
+
+/* Botones */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* 📱 Adaptación para teléfonos */
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 100px 5% 50px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .hero-image img {
+
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+}
 /*=========================
 SECCIONES
 =========================*/
@@ -978,27 +1066,28 @@ GRID TARJETAS
 /*==================================================
 MOOC
 ==================================================*/
-
-.mooc-card{
-
-    margin-top:50px;
-
-    text-align:center;
-
+.mooc-card {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.mooc-image{
-
-    width:100%;
-
-    max-width:700px;
-
-    border-radius:20px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.20);
-
+.mooc-image {
+    width: 60%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.20);
 }
 
+/* Celular */
+@media (max-width: 600px) {
+    .mooc-image {
+        width: 70%;
+        max-width: 250px;
+    }
+}
 .mooc-card .btn-primary{
 
     margin-top:30px;
@@ -1244,39 +1333,6 @@ RESPONSIVE
                 SERVICIO SOCIAL
 ==================================================*/
 
-/* HERO */
-
-.servicio.hero{
-
-    min-height:100vh;
-
-    background:
-    linear-gradient(
-        135deg,
-        #002b6b,
-        #0044aa
-    );
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:140px 8% 80px;
-
-    color:white;
-}
-
-.servicio-hero .hero-image img{
-
-    width:100%;
-
-    max-width:520px;
-
-    border-radius:25px;
-
-    box-shadow:0 20px 45px rgba(0,0,0,.18);
-
-}
 
 /*==================================
 INTRODUCCIÓN
