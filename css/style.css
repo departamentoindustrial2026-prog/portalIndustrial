@@ -3862,3 +3862,413 @@ font-size:1.9rem;
     }
 
 }
+/* =========================================================
+   PROCEDIMIENTOS DE TITULACIÓN
+========================================================= */
+
+.titulacion-procesos {
+    padding: 90px 0;
+    background: #f5f8fc;
+}
+
+
+/* CONTENEDOR DE LAS DOS TARJETAS */
+
+.procesos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+    margin-top: 45px;
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+========================================================= */
+
+.proceso-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid #e5eaf1;
+    box-shadow: 0 12px 30px rgba(0, 40, 80, 0.08);
+    height: 100%;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.proceso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(0, 40, 80, 0.13);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.proceso-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e8edf3;
+}
+
+
+.proceso-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2fb;
+    border-radius: 14px;
+
+    font-size: 25px;
+}
+
+
+.proceso-tag {
+    display: inline-block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #1769aa;
+}
+
+
+.proceso-header h3 {
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 1.2;
+
+    color: #102a43;
+}
+
+
+/* =========================================================
+   LISTA DE PASOS
+========================================================= */
+
+.proceso-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   CADA PASO
+========================================================= */
+
+.paso {
+    display: flex;
+    gap: 14px;
+
+    position: relative;
+
+    padding: 13px 0;
+}
+
+
+/* LÍNEA ENTRE PASOS */
+
+.paso:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    top: 42px;
+    bottom: -2px;
+
+    width: 2px;
+
+    background: #dfe8f2;
+}
+
+
+/* =========================================================
+   NÚMERO
+========================================================= */
+
+.paso-numero {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+
+    border-radius: 50%;
+
+    background: #1769aa;
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL PASO
+========================================================= */
+
+.paso-contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.paso-responsable {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1769aa;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+
+.paso-contenido p {
+    margin: 0;
+
+    color: #526477;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ENLACE CENTRO DE INFORMACIÓN
+========================================================= */
+
+.proceso-link {
+    display: inline-block;
+
+    margin-top: 9px;
+
+    color: #1769aa;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.proceso-link:hover {
+    color: #0d3f68;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   NOTA
+========================================================= */
+
+.proceso-nota {
+    margin-top: 10px;
+    padding: 10px 12px;
+
+    background: #fff8e6;
+
+    border-left: 3px solid #e5a900;
+
+    border-radius: 6px;
+
+    color: #6b5a25;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+.proceso-nota strong {
+    color: #8a6900;
+}
+
+
+/* =========================================================
+   TARJETA EGEL
+========================================================= */
+
+.proceso-egel {
+    position: relative;
+}
+
+
+.proceso-egel .proceso-icon {
+    background: #eef5ee;
+}
+
+
+.proceso-egel .proceso-tag {
+    color: #34734a;
+}
+
+
+.proceso-egel .paso-numero {
+    background: #34734a;
+}
+
+
+.proceso-egel .paso-responsable {
+    color: #34734a;
+}
+
+
+/* =========================================================
+   MENSAJE FINAL EGEL
+========================================================= */
+
+.proceso-final {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+    padding: 13px 15px;
+
+    background: #f0f8f2;
+
+    border-radius: 10px;
+
+    border: 1px solid #d7eadb;
+}
+
+
+.proceso-final span {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #34734a;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.proceso-final p {
+    margin: 0;
+
+    color: #3d6046;
+
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .procesos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .proceso-card {
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .titulacion-procesos {
+        padding: 60px 0;
+    }
+
+    .procesos-grid {
+        margin-top: 30px;
+    }
+
+    .proceso-card {
+        padding: 20px 17px;
+        border-radius: 16px;
+    }
+
+    .proceso-header {
+        gap: 12px;
+        padding-bottom: 17px;
+    }
+
+    .proceso-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        font-size: 21px;
+    }
+
+    .proceso-header h3 {
+        font-size: 21px;
+    }
+
+    .paso {
+        gap: 11px;
+        padding: 11px 0;
+    }
+
+    .paso-numero {
+        width: 27px;
+        height: 27px;
+        min-width: 27px;
+        font-size: 10px;
+    }
+
+    .paso:not(:last-child)::after {
+        left: 12.5px;
+        top: 38px;
+    }
+
+    .paso-contenido p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .proceso-nota {
+        font-size: 10.5px;
+    }
+
+}
