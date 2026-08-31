@@ -4272,3 +4272,770 @@ font-size:1.9rem;
     }
 
 }
+
+/* =========================================================
+   LINEAMIENTOS ACADÉMICO-ADMINISTRATIVOS
+========================================================= */
+
+.lineamientos-section {
+    padding: 90px 20px;
+    background: #f5f8fc;
+}
+
+.lineamientos-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.lineamientos-section .section-title {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.lineamientos-section .section-title span,
+.lineamientos-subtitle span {
+    display: inline-block;
+    color: #0066b3;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.lineamientos-section .section-title h2 {
+    color: #123b63;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 15px;
+}
+
+.lineamientos-section .section-title p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================================
+   DESTACADO CALIFICACIÓN 70
+========================================================= */
+
+.lineamientos-highlight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    max-width: 850px;
+    margin: 0 auto 65px;
+
+    padding: 25px 30px;
+
+    background: #123b63;
+    border-radius: 20px;
+
+    box-shadow: 0 12px 30px rgba(18, 59, 99, 0.16);
+}
+
+.highlight-icon {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+    color: #0066b3;
+
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.highlight-content span {
+    display: block;
+
+    color: #b9d8ef;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.highlight-content h3 {
+    color: #ffffff;
+    font-size: 21px;
+    margin: 0 0 6px;
+}
+
+.highlight-content p {
+    color: #dbe8f3;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUBTÍTULO
+========================================================= */
+
+.lineamientos-subtitle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.lineamientos-subtitle h3 {
+    color: #123b63;
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.lineamientos-subtitle p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================================
+   RUTA ACADÉMICA
+========================================================= */
+
+.academic-route {
+    display: grid;
+    grid-template-columns: 1fr 45px 1fr 45px 1fr;
+    align-items: center;
+
+    margin-bottom: 45px;
+}
+
+.academic-step {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    padding: 24px;
+
+    min-height: 220px;
+
+    box-shadow: 0 8px 25px rgba(18, 59, 99, 0.07);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.academic-step:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(18, 59, 99, 0.12);
+}
+
+.academic-number {
+    display: inline-flex;
+
+    width: 45px;
+    height: 45px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #0066b3;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 900;
+
+    margin-bottom: 15px;
+}
+
+.academic-step-content {
+    min-width: 0;
+}
+
+.academic-label {
+    color: #0066b3;
+    font-size: 11px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.academic-step h3 {
+    color: #123b63;
+
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.academic-step p {
+    color: #5f6b7a;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+.academic-note {
+    margin-top: 13px;
+
+    padding: 10px 12px;
+
+    border-left: 3px solid #0066b3;
+
+    background: #f2f7fb;
+
+    color: #526173;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.route-arrow {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #0066b3;
+
+    font-size: 28px;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   PASO ESPECIAL
+========================================================= */
+
+.academic-step-danger {
+    border-top: 4px solid #d89b00;
+}
+
+.academic-step-danger .academic-number {
+    background: #d89b00;
+}
+
+
+/* =========================================================
+   ADVERTENCIA
+========================================================= */
+
+.academic-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    margin: 0 auto 50px;
+
+    padding: 20px 22px;
+
+    max-width: 950px;
+
+    background: #fff8e8;
+
+    border-left: 5px solid #d89b00;
+
+    border-radius: 12px;
+}
+
+.warning-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d89b00;
+    color: #ffffff;
+
+    font-weight: 900;
+}
+
+.academic-warning h3 {
+    color: #805f00;
+
+    font-size: 16px;
+
+    margin: 0 0 5px;
+}
+
+.academic-warning p {
+    color: #665a3b;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TARJETAS DE REINGRESO
+========================================================= */
+
+.academic-cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 55px;
+}
+
+.academic-info-card {
+    background: #ffffff;
+
+    border: 1px solid #e3e9f0;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    box-shadow: 0 8px 25px rgba(18, 59, 99, 0.06);
+}
+
+.info-card-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf3fa;
+
+    color: #0066b3;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+    font-weight: 900;
+
+    margin-bottom: 15px;
+}
+
+.academic-info-card h3 {
+    color: #123b63;
+
+    font-size: 20px;
+
+    margin: 0 0 12px;
+}
+
+.academic-info-card p {
+    color: #5f6b7a;
+
+    font-size: 13px;
+    line-height: 1.65;
+
+    margin: 0 0 10px;
+}
+
+
+/* =========================================================
+   REINGRESO
+========================================================= */
+
+.academic-reentry {
+    background: #123b63;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 75px;
+
+    color: #ffffff;
+}
+
+.academic-reentry h3 {
+    font-size: 22px;
+
+    margin: 0 0 10px;
+}
+
+.academic-reentry > p {
+    color: #dbe8f3;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    max-width: 850px;
+
+    margin: 0 0 25px;
+}
+
+.reentry-points {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.reentry-points div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 14px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 10px;
+}
+
+.reentry-points strong {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.reentry-points span {
+    color: #dbe8f3;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CONVALIDACIÓN
+========================================================= */
+
+.convalidation-section {
+    padding-top: 10px;
+}
+
+.convalidation-section .section-title {
+    margin-bottom: 35px;
+}
+
+.convalidation-intro {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.convalidation-intro p {
+    color: #5f6b7a;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin: 0 0 10px;
+}
+
+
+/* =========================================================
+   TARJETAS DE CONVALIDACIÓN
+========================================================= */
+
+.convalidation-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 35px;
+}
+
+.convalidation-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: 0 7px 22px rgba(18, 59, 99, 0.06);
+
+    transition: transform 0.3s ease;
+}
+
+.convalidation-card:hover {
+    transform: translateY(-5px);
+}
+
+.convalidation-number {
+    color: #0066b3;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    margin-bottom: 12px;
+}
+
+.convalidation-card h3 {
+    color: #123b63;
+
+    font-size: 18px;
+
+    margin: 0 0 10px;
+}
+
+.convalidation-card p {
+    color: #5f6b7a;
+
+    font-size: 12px;
+    line-height: 1.65;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   CONVALIDACIÓN - AVISO FINAL
+========================================================= */
+
+.convalidation-warning {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 20px 24px;
+
+    background: #eaf3fa;
+
+    border: 1px solid #cfe2f0;
+
+    border-radius: 14px;
+}
+
+.convalidation-warning .warning-icon {
+    background: #0066b3;
+}
+
+.convalidation-warning h3 {
+    color: #123b63;
+
+    font-size: 16px;
+
+    margin: 0 0 5px;
+}
+
+.convalidation-warning p {
+    color: #526173;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .academic-route {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .route-arrow {
+        transform: rotate(0deg);
+    }
+
+    .academic-step {
+        min-height: auto;
+    }
+
+    .reentry-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .convalidation-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .lineamientos-section {
+        padding: 60px 15px;
+    }
+
+    .lineamientos-section .section-title h2 {
+        font-size: 28px;
+    }
+
+    .lineamientos-section .section-title p {
+        font-size: 13px;
+    }
+
+
+    /* DESTACADO */
+
+    .lineamientos-highlight {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+
+        padding: 25px 20px;
+
+        margin-bottom: 50px;
+    }
+
+    .highlight-icon {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+
+        font-size: 23px;
+    }
+
+    .highlight-content h3 {
+        font-size: 18px;
+    }
+
+
+    /* SUBTÍTULO */
+
+    .lineamientos-subtitle h3 {
+        font-size: 23px;
+    }
+
+
+    /* PASOS */
+
+    .academic-step {
+        padding: 20px;
+    }
+
+    .academic-step h3 {
+        font-size: 18px;
+    }
+
+    .academic-step p {
+        font-size: 12px;
+    }
+
+
+    /* REINGRESO */
+
+    .academic-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PUNTOS */
+
+    .reentry-points {
+        grid-template-columns: 1fr;
+    }
+
+    .academic-reentry {
+        padding: 23px 18px;
+    }
+
+
+    /* CONVALIDACIÓN */
+
+    .convalidation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .convalidation-card {
+        padding: 20px;
+    }
+
+
+    /* AVISOS */
+
+    .academic-warning,
+    .convalidation-warning {
+        padding: 17px;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .lineamientos-section {
+        padding: 45px 10px;
+    }
+
+    .lineamientos-section .section-title h2 {
+        font-size: 24px;
+    }
+
+    .academic-step {
+        padding: 17px;
+    }
+
+    .academic-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .academic-step h3 {
+        font-size: 17px;
+    }
+
+    .academic-step p,
+    .academic-info-card p,
+    .convalidation-card p {
+        font-size: 11.5px;
+    }
+
+    .academic-warning p,
+    .convalidation-warning p {
+        font-size: 11.5px;
+    }
+
+}
