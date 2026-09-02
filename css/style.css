@@ -5101,3 +5101,292 @@ font-size:1.9rem;
     }
 
 }
+
+/* =========================================
+BOLSA DE TRABAJO
+========================================= */
+
+.jobs-section {
+padding: 80px 0;
+background: #f5f7fa;
+}
+
+.jobs-section .section-title {
+text-align: center;
+max-width: 800px;
+margin: 0 auto 50px;
+}
+
+.jobs-section .section-title span {
+display: inline-block;
+margin-bottom: 10px;
+color: #f39c12;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.jobs-section .section-title h2 {
+margin-bottom: 15px;
+color: #0d2b45;
+font-size: 38px;
+font-weight: 800;
+}
+
+.jobs-section .section-title p {
+color: #5f6b76;
+line-height: 1.7;
+}
+
+/* GRID DE TARJETAS */
+
+.jobs-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 28px;
+align-items: stretch;
+}
+
+/* TARJETA */
+
+.job-card {
+display: flex;
+flex-direction: column;
+overflow: hidden;
+background: #ffffff;
+border-radius: 18px;
+border: 1px solid #e5e9ee;
+box-shadow: 0 8px 25px rgba(13, 43, 69, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card {
+transform: translateY(-8px);
+box-shadow: 0 16px 35px rgba(13, 43, 69, 0.15);
+}
+
+/* ENCABEZADO DE TARJETA */
+
+.job-card-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+min-height: 115px;
+padding: 25px;
+}
+
+.linkedin-header {
+background: #eaf3fa;
+}
+
+.occ-header {
+background: #eef7f1;
+}
+
+.hidalgo-header {
+background: #f4f0fa;
+}
+
+/* LOGOTIPO / IDENTIFICADOR */
+
+.job-logo {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 62px;
+height: 62px;
+border-radius: 14px;
+background: #0d2b45;
+color: #ffffff;
+font-size: 18px;
+font-weight: 800;
+letter-spacing: -1px;
+}
+
+.linkedin-header .job-logo {
+background: #0a66c2;
+font-size: 27px;
+}
+
+.occ-header .job-logo {
+background: #e63946;
+font-size: 16px;
+}
+
+.hidalgo-header .job-logo {
+background: #6b3fa0;
+font-size: 15px;
+}
+
+/* CATEGORÍA */
+
+.job-category {
+padding: 7px 12px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.85);
+color: #45515d;
+font-size: 12px;
+font-weight: 700;
+}
+
+/* CONTENIDO */
+
+.job-card-content {
+display: flex;
+flex: 1;
+flex-direction: column;
+padding: 28px;
+}
+
+.job-card-content h3 {
+margin: 0 0 15px;
+color: #0d2b45;
+font-size: 23px;
+font-weight: 800;
+}
+
+.job-card-content p {
+flex: 1;
+margin: 0 0 25px;
+color: #626d78;
+font-size: 15px;
+line-height: 1.7;
+}
+
+/* BOTÓN */
+
+.job-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+min-height: 48px;
+padding: 12px 20px;
+border-radius: 9px;
+background: #0d2b45;
+color: #ffffff;
+text-decoration: none;
+font-size: 14px;
+font-weight: 700;
+transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.job-button {
+background: #f39c12;
+color: #ffffff;
+transform: translateY(-2px);
+}
+
+/* NOTA INFORMATIVA */
+
+.jobs-note {
+display: flex;
+align-items: flex-start;
+gap: 18px;
+max-width: 900px;
+margin: 45px auto 0;
+padding: 25px 30px;
+border-left: 5px solid #f39c12;
+border-radius: 12px;
+background: #ffffff;
+box-shadow: 0 6px 20px rgba(13, 43, 69, 0.07);
+}
+
+.jobs-note-icon {
+display: flex;
+flex-shrink: 0;
+align-items: center;
+justify-content: center;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+background: #f39c12;
+color: #ffffff;
+font-size: 20px;
+font-weight: 800;
+}
+
+.jobs-note h3 {
+margin: 0 0 8px;
+color: #0d2b45;
+font-size: 18px;
+}
+
+.jobs-note p {
+margin: 0;
+color: #626d78;
+font-size: 14px;
+line-height: 1.7;
+}
+
+/* =========================================
+TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+.jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.job-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    width: 100%;
+    justify-self: center;
+}
+
+}
+
+/* =========================================
+CELULAR
+========================================= */
+
+@media (max-width: 650px) {
+
+.jobs-section {
+    padding: 60px 15px;
+}
+
+.jobs-section .section-title {
+    margin-bottom: 35px;
+}
+
+.jobs-section .section-title h2 {
+    font-size: 30px;
+}
+
+.jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.job-card:last-child {
+    grid-column: auto;
+    max-width: none;
+}
+
+.job-card-header {
+    min-height: 100px;
+    padding: 20px;
+}
+
+.job-card-content {
+    padding: 23px;
+}
+
+.job-card-content h3 {
+    font-size: 21px;
+}
+
+.job-card-content p {
+    font-size: 14px;
+}
+
+.jobs-note {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+}
