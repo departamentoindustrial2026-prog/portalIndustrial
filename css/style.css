@@ -4671,3 +4671,433 @@ font-size:1.9rem;
     }
 
 }
+
+/* =========================================================
+   RECOMENDACIONES PARA ELABORAR CV
+   ========================================================= */
+
+.cv-recommendations {
+    padding: 80px 0;
+    background: #f7f9fc;
+}
+
+.cv-recommendations .section-title {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+
+/* GRID PRINCIPAL */
+
+.cv-recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* TARJETAS */
+
+.cv-recommendation-card {
+    position: relative;
+
+    background: #ffffff;
+
+    padding: 30px 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e9ef;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+
+.cv-recommendation-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+
+/* NUMERO */
+
+.cv-card-number {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: rgba(10, 55, 90, 0.07);
+}
+
+
+/* ICONO */
+
+.cv-card-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #0b3d5c;
+
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* TITULO */
+
+.cv-recommendation-card h3 {
+    margin-bottom: 12px;
+
+    color: #0b3d5c;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* TEXTO */
+
+.cv-recommendation-card p {
+    color: #606b75;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* LISTA */
+
+.cv-recommendation-card ul {
+    padding-left: 20px;
+
+    margin: 10px 0;
+}
+
+
+.cv-recommendation-card li {
+    color: #56616b;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+/* INFORMACION DESTACADA */
+
+.cv-highlight {
+    margin-top: 18px;
+
+    padding: 13px 15px;
+
+    border-left: 4px solid #0b3d5c;
+
+    background: #f1f5f8;
+
+    border-radius: 6px;
+
+    color: #58636d;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+.cv-highlight strong {
+    color: #0b3d5c;
+}
+
+
+/* ETIQUETAS DE HABILIDADES */
+
+.skills-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: 15px;
+}
+
+
+.skills-tags span {
+    background: #eef3f7;
+
+    color: #0b3d5c;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CONSEJOS CLAVE
+   ========================================================= */
+
+.cv-tips {
+    padding: 80px 0;
+
+    background: #ffffff;
+}
+
+
+.cv-tips .section-title {
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+/* GRID */
+
+.cv-tips-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* TARJETAS */
+
+.cv-tip-card {
+    padding: 28px 25px;
+
+    background: #f7f9fc;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e9ef;
+
+    transition: all 0.3s ease;
+}
+
+
+.cv-tip-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ICONO */
+
+.cv-tip-icon {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TITULO */
+
+.cv-tip-card h3 {
+    color: #0b3d5c;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO */
+
+.cv-tip-card p {
+    color: #626d76;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/* ETIQUETA FINAL */
+
+.tip-label {
+    display: inline-block;
+
+    color: #0b3d5c;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   MENSAJE FINAL
+   ========================================================= */
+
+.cv-final-message {
+    margin-top: 40px;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #0b3d5c;
+
+    border-radius: 18px;
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.cv-final-icon {
+    font-size: 35px;
+
+    flex-shrink: 0;
+}
+
+
+.cv-final-message h3 {
+    margin-bottom: 6px;
+
+    font-size: 20px;
+}
+
+
+.cv-final-message p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .cv-recommendations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cv-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .cv-recommendations {
+        padding: 55px 0;
+    }
+
+    .cv-tips {
+        padding: 55px 0;
+    }
+
+
+    .cv-recommendations-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .cv-tips-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .cv-recommendation-card {
+        padding: 25px 20px;
+    }
+
+
+    .cv-card-number {
+        font-size: 35px;
+    }
+
+
+    .cv-final-message {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 25px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .cv-recommendation-card h3 {
+        font-size: 18px;
+    }
+
+
+    .cv-recommendation-card p,
+    .cv-tip-card p {
+        font-size: 13px;
+    }
+
+
+    .skills-tags span {
+        font-size: 11px;
+    }
+
+}
