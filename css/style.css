@@ -5514,3 +5514,784 @@ CELULAR
 }
 
 }
+
+/* =========================================
+GALERÍA 
+========================================= */
+
+.simple-gallery {
+padding: 70px 0;
+background: #f5f7fa;
+}
+
+.simple-gallery .section-title {
+max-width: 750px;
+margin: 0 auto 40px;
+text-align: center;
+}
+
+.simple-gallery .section-title span {
+display: inline-block;
+margin-bottom: 8px;
+
+color: #f39c12;
+
+font-size: 14px;
+font-weight: 700;
+
+text-transform: uppercase;
+letter-spacing: 1px;
+
+}
+
+.simple-gallery .section-title h2 {
+margin: 0 0 12px;
+
+color: #0d2b45;
+
+font-size: 36px;
+font-weight: 800;
+
+}
+
+.simple-gallery .section-title p {
+margin: 0;
+
+color: #626d78;
+
+font-size: 16px;
+line-height: 1.6;
+
+}
+
+/* =========================================
+CUADRÍCULA
+========================================= */
+
+.gallery-grid {
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 22px;
+
+max-width: 1100px;
+
+margin: 0 auto;
+
+}
+
+/* =========================================
+FOTO
+========================================= */
+
+.gallery-item {
+height: 260px;
+
+overflow: hidden;
+
+border-radius: 16px;
+
+background: #ffffff;
+
+box-shadow: 0 8px 20px rgba(13, 43, 69, 0.10);
+
+transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+}
+
+.gallery-item {
+transform: translateY(-6px);
+
+box-shadow: 0 14px 28px rgba(13, 43, 69, 0.18);
+
+}
+
+/* =========================================
+IMAGEN
+========================================= */
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+
+display: block;
+
+object-fit: cover;
+
+transition: transform 0.4s ease;
+
+}
+
+.gallery-item img {
+transform: scale(1.05);
+}
+
+/* =========================================
+TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+.simple-gallery {
+    padding: 60px 20px;
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* =========================================
+CELULAR
+========================================= */
+
+@media (max-width: 550px) {
+
+.simple-gallery {
+    padding: 50px 15px;
+}
+
+.simple-gallery .section-title h2 {
+    font-size: 30px;
+}
+
+.simple-gallery .section-title p {
+    font-size: 14px;
+}
+
+.gallery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+}
+
+.gallery-item {
+    height: 240px;
+}
+
+}
+
+/* =========================================
+GALERÍA TIPO MOSAICO
+========================================= */
+
+.photo-gallery {
+padding: 85px 0;
+background: #ffffff;
+}
+
+/* =========================================
+TÍTULO
+========================================= */
+
+.photo-gallery .section-title {
+max-width: 800px;
+margin: 0 auto 45px;
+text-align: center;
+}
+
+.photo-gallery .section-title span {
+display: inline-block;
+
+margin-bottom: 10px;
+
+color: #f39c12;
+
+font-size: 14px;
+font-weight: 700;
+
+text-transform: uppercase;
+letter-spacing: 1px;
+
+}
+
+.photo-gallery .section-title h2 {
+margin: 0 0 14px;
+
+color: #0d2b45;
+
+font-size: 38px;
+font-weight: 800;
+
+}
+
+.photo-gallery .section-title p {
+margin: 0;
+
+color: #626d78;
+
+font-size: 16px;
+line-height: 1.7;
+
+}
+
+/* =========================================
+MOSAICO
+========================================= */
+
+.photo-mosaic {
+display: grid;
+
+grid-template-columns: 1.5fr 1fr 1fr;
+
+grid-template-rows: 250px 250px;
+
+gap: 18px;
+
+max-width: 1150px;
+
+margin: 0 auto;
+
+}
+
+/* =========================================
+CONTENEDOR DE CADA FOTO
+========================================= */
+
+.photo-main,
+.photo-small {
+position: relative;
+
+overflow: hidden;
+
+border-radius: 20px;
+
+background: #0d2b45;
+
+box-shadow: 0 8px 25px rgba(13, 43, 69, 0.12);
+
+cursor: pointer;
+
+}
+
+/* =========================================
+FOTO PRINCIPAL
+========================================= */
+
+.photo-main {
+grid-column: 1;
+grid-row: 1 / 3;
+}
+
+/* =========================================
+FOTOS PEQUEÑAS
+========================================= */
+
+.photo-two {
+grid-column: 2;
+grid-row: 1;
+}
+
+.photo-three {
+grid-column: 3;
+grid-row: 1;
+}
+
+.photo-four {
+grid-column: 2;
+grid-row: 2;
+}
+
+.photo-five {
+grid-column: 3;
+grid-row: 2;
+}
+
+/* =========================================
+IMÁGENES
+========================================= */
+
+.photo-main img,
+.photo-small img {
+width: 100%;
+height: 100%;
+
+display: block;
+
+object-fit: cover;
+
+transition: transform 0.5s ease;
+
+}
+
+/* ZOOM AL PASAR EL CURSOR */
+
+.photo-main img,
+.photo-small img {
+transform: scale(1.07);
+}
+
+/* =========================================
+DEGRADADO
+========================================= */
+
+.photo-main::after,
+.photo-small::after {
+content: "";
+
+position: absolute;
+
+left: 0;
+right: 0;
+bottom: 0;
+
+height: 65%;
+
+background: linear-gradient(
+    to top,
+    rgba(4, 25, 52, 0.85),
+    rgba(4, 25, 52, 0)
+);
+
+pointer-events: none;
+
+}
+
+/* =========================================
+INFORMACIÓN SOBRE LA FOTO
+========================================= */
+
+.photo-overlay {
+position: absolute;
+
+left: 24px;
+right: 24px;
+bottom: 22px;
+
+z-index: 2;
+
+color: #ffffff;
+
+}
+
+.photo-overlay span {
+display: inline-block;
+
+margin-bottom: 7px;
+
+color: #f6b63d;
+
+font-size: 12px;
+font-weight: 700;
+
+text-transform: uppercase;
+
+letter-spacing: 1px;
+
+}
+
+.photo-overlay h3 {
+margin: 0;
+
+color: #ffffff;
+
+font-size: 18px;
+
+font-weight: 700;
+
+line-height: 1.3;
+
+}
+
+/* FOTO PRINCIPAL */
+
+.photo-main .photo-overlay {
+left: 30px;
+right: 30px;
+bottom: 28px;
+}
+
+.photo-main .photo-overlay h3 {
+max-width: 450px;
+
+font-size: 26px;
+
+}
+
+/* =========================================
+EFECTO DE BORDE
+========================================= */
+
+.photo-main,
+.photo-small {
+box-shadow: 0 15px 35px rgba(13, 43, 69, 0.20);
+}
+
+/* =========================================
+TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+.photo-gallery {
+    padding: 70px 20px;
+}
+
+.photo-mosaic {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows:
+        300px
+        220px
+        220px;
+
+    gap: 15px;
+}
+
+.photo-main {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.photo-two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.photo-three {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.photo-four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.photo-five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+}
+
+/* =========================================
+CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+.photo-gallery {
+    padding: 55px 15px;
+}
+
+.photo-gallery .section-title h2 {
+    font-size: 30px;
+}
+
+.photo-gallery .section-title p {
+    font-size: 14px;
+}
+
+.photo-mosaic {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows:
+        280px
+        210px
+        210px
+        210px
+        210px;
+
+    gap: 14px;
+}
+
+.photo-main {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.photo-two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.photo-three {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.photo-four {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.photo-five {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.photo-overlay {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+}
+
+.photo-main .photo-overlay {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.photo-main .photo-overlay h3 {
+    font-size: 22px;
+}
+
+.photo-overlay h3 {
+    font-size: 16px;
+}
+
+}
+
+/* ==========================================
+   TABLA DE EMPRESAS E INSTITUCIONES
+   ========================================== */
+
+.empresas-section {
+    padding: 90px 0;
+    background: #f5f8fc;
+}
+
+.empresas-section .section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.empresas-section .section-title span {
+    display: inline-block;
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.empresas-section .section-title h2 {
+    color: #063b82;
+    font-size: clamp(30px, 4vw, 46px);
+    margin-bottom: 12px;
+}
+
+.empresas-section .section-title p {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #667085;
+    line-height: 1.7;
+}
+
+
+/* BUSCADOR */
+
+.empresas-search {
+    max-width: 700px;
+    margin: 0 auto 18px;
+}
+
+.empresas-search input {
+    width: 100%;
+    padding: 17px 22px;
+    border: 2px solid #dce5ef;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #263238;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.empresas-search input::placeholder {
+    color: #98a2b3;
+}
+
+.empresas-search input:focus {
+    border-color: #0753aa;
+    box-shadow: 0 0 0 4px rgba(7, 83, 170, 0.10);
+}
+
+
+/* INFORMACIÓN */
+
+.empresas-info {
+    max-width: 1200px;
+    margin: 0 auto 12px;
+    color: #667085;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* CONTENEDOR DE TABLA */
+
+.empresas-table-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow-x: auto;
+    box-shadow: 0 10px 35px rgba(6, 59, 130, 0.10);
+    border: 1px solid #e5eaf0;
+}
+
+
+/* TABLA */
+
+.empresas-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+    font-size: 15px;
+}
+
+
+/* ENCABEZADO */
+
+.empresas-table thead {
+    background: linear-gradient(
+        135deg,
+        #063b82,
+        #0753aa
+    );
+}
+
+.empresas-table th {
+    color: #ffffff;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+
+/* COLUMNAS */
+
+.empresas-table .col-numero {
+    width: 60px;
+    text-align: center;
+}
+
+.empresas-table th:nth-child(2) {
+    width: 35%;
+}
+
+.empresas-table th:nth-child(3) {
+    width: 65%;
+}
+
+
+/* CELDAS */
+
+.empresas-table td {
+    padding: 17px 20px;
+    border-bottom: 1px solid #e9eef4;
+    color: #475467;
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+.empresas-table td:first-child {
+    text-align: center;
+    color: #0753aa;
+    font-weight: 700;
+}
+
+
+/* NOMBRE DE EMPRESA */
+
+.empresas-table td:nth-child(2) {
+    color: #063b82;
+    font-weight: 700;
+}
+
+
+/* EFECTO FILAS */
+
+.empresas-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.empresas-table tbody tr:hover {
+    background: #f4f8fd;
+}
+
+.empresas-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* FILAS ALTERNADAS */
+
+.empresas-table tbody tr:nth-child(even) {
+    background: #fafbfd;
+}
+
+.empresas-table tbody tr:nth-child(even):hover {
+    background: #f4f8fd;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .empresas-section {
+        padding: 60px 15px;
+    }
+
+    .empresas-section .section-title h2 {
+        font-size: 32px;
+    }
+
+    .empresas-section .section-title p {
+        font-size: 15px;
+    }
+
+    .empresas-search input {
+        padding: 15px 18px;
+        font-size: 15px;
+    }
+
+    .empresas-table-wrapper {
+        border-radius: 12px;
+    }
+
+    .empresas-table {
+        min-width: 750px;
+        font-size: 14px;
+    }
+
+    .empresas-table th,
+    .empresas-table td {
+        padding: 14px 15px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+
+    .empresas-section {
+        padding: 50px 10px;
+    }
+
+    .empresas-section .section-title h2 {
+        font-size: 28px;
+    }
+
+    .empresas-search {
+        margin-bottom: 15px;
+    }
+
+    .empresas-table {
+        min-width: 700px;
+    }
+}

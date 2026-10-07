@@ -72,7 +72,7 @@
 
                 </a>
 
-                <a href="" class="btn-secondary">
+                <a href="#empresas-vinculacion" class="btn-secondary">
 
                     Otras empresas 
 
@@ -376,7 +376,625 @@ Elementos para realizar el informe técnico de residencia.
 
 </section>
 
+<section class="empresas-section" id="empresas-vinculacion">
+    <div class="container">
 
+        <div class="section-title">
+            
+            <h2>Empresas e instituciones</h2>
+            <p>
+                Consulta el listado de empresas e instituciones relacionadas con
+                las oportunidades profesionales para estudiantes y egresados
+                de Ingeniería Industrial.
+            </p>
+        </div>
+
+        <!-- Buscador -->
+        <div class="empresas-search">
+            <input
+                type="text"
+                id="buscadorEmpresas"
+                placeholder="Buscar por nombre, dirección o teléfono..."
+                aria-label="Buscar empresas"
+            >
+        </div>
+
+        <!-- Contador -->
+        <div class="empresas-info">
+            <span id="contadorEmpresas">Mostrando empresas</span>
+        </div>
+
+        <!-- Tabla -->
+        <div class="empresas-table-wrapper">
+
+            <table class="empresas-table">
+
+                <thead>
+                    <tr>
+                        <th class="col-numero">#</th>
+                        <th>NOMBRE</th>
+                        <th>DIRECCIÓN</th>
+                        <th>CONTACTO</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaEmpresas">
+
+                    <tr>
+                        <td>1</td>
+                        <td>Fundación Nemi, A.C.</td>
+                        <td>
+                            14 de Agosto 29, Lomas, Manuel Avila Camacho,
+                            53910 Naucalpan de Juárez, Méx.
+                        </td>
+                        <td>55 1054 1700</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            Museo Interactivo para la Niñez y Juventud
+                            Hidalguense El Rehilete
+                        </td>
+                        <td>
+                            Blvd. Felipe Ángeles Km 84.5, Colonia Venta Prieta,
+                            42080 Pachuca de Soto, Hidalgo
+                        </td>
+                        <td>7717112044</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>HAZ 3D print</td>
+                        <td>
+                            Carreteras S/N, PRI Chacón,
+                            42187 El Saucillo, Hgo.
+                        </td>
+                        <td>
+                            <a href="tel:7717000830" class="telefono-link">
+                                771 700 0830
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>AAIN JS S.A DE C.V</td>
+                        <td>
+                            Calle Hidalgo No. 8, Col. Centro,
+                            Actopan, Hidalgo, C.P. 42500
+                        </td>
+                        <td>7727270004 y 7727272588</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>AAMEC</td>
+                        <td>
+                            Tomas Jeferson 99, Felipe Carrillo Puerto,
+                            76138 Santiago de Querétaro, Qro., México
+                        </td>
+                        <td>524423035595 y 524421399002</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>AB - FORTI</td>
+                        <td>
+                            Plaza Omega Center, Local PA-228<br>
+                            Av. del Marqués No. 21<br>
+                            Parque Industrial Bernardo Quintana<br>
+                            C.P. 76246, El Marqués, Querétaro, México.
+                        </td>
+                        <td>(442) 221 5943 y (442) 221 5602</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>ABC TECHNOLOGIES</td>
+                        <td>
+                            Av. Manufacturas No. 612,
+                            Querétaro, Qro.
+                        </td>
+                        <td>442 153 5760</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>ACCES INTERNATIONAL SCM SA DE CV</td>
+                        <td>
+                            Helio 420, Parque 300,
+                            66368 Cdad. Santa Catarina, N.L.
+                        </td>
+                        <td>81 8032 8057</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>ADESMAQ INGENIERÍA S.A. DE C.V.</td>
+                        <td>
+                            Prolongacion Av. Hidalgo 186,
+                            Industrial Barrientos,
+                            54015 Tlalnepantla, Méx.
+                        </td>
+                        <td>Sin teléfono registrado</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            AEROPUERTO INTERNACIONAL FELIPE ÁNGELES,
+                            S.A DE C.V
+                        </td>
+                        <td>
+                            Circuito Exterior Mexiquense km 33<br>
+                            Santa Lucía, 55600<br>
+                            Zumpango de Ocampo<br>
+                            Estado de México
+                        </td>
+                        <td>55 5798 9800</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>Agave de plata corp</td>
+                        <td>
+                            Camino Real de La Plata, Zona Plateada,
+                            42083 Pachuca de Soto, Hgo.
+                        </td>
+                        <td>17711222173</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>AKASSA - House</td>
+                        <td>
+                            Boulevard Nuevo Hidalgo 332, Int.-C,
+                            Col, Puerta de Hierro,
+                            42086 Pachuca de Soto, Hgo.
+                        </td>
+                        <td>771 489 1500</td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>Alstom Ferroviaria México S.A. de C.V</td>
+                        <td>
+                            Corredor Industrial s/n, Zona Industrial,
+                            Ciudad Sahagún, Tepeapulco, Hidalgo,
+                            C.P. 43998.
+                        </td>
+                        <td>7919138700</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>AMCAA MAQUINARIA Y SUMINISTROS</td>
+                        <td>
+                            Carretera a Villa de Tezontepec Km 5.5,
+                            Calle 1 Lt 17 MZ 4,
+                            Parque Industrial PLATAH,
+                            Villa de Tezontepec, Hidalgo,
+                            C.P. 43880
+                        </td>
+                        <td>743 688 2450 / 743 688 2455</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>AMI AUTOMATION</td>
+                        <td>
+                            Blvd. Díaz Ordaz #402,
+                            Col. Rincón de Santa María,
+                            C.P. 64650, Monterrey,
+                            Nuevo León, México
+                        </td>
+                        <td>+52 (81) 1001 4050</td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>AP MASCARILLAS S.A. DE C.V.</td>
+                        <td>
+                            Manzana 018, Lazaro Cardenas 3ra Secc,
+                            54189 Tlalnepantla, Méx.
+                        </td>
+                        <td>55 2062 5440</td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            ASOCIACIÓN NACIONAL DE CAPACITACIÓN
+                            DE BECARIOS A.C
+                        </td>
+                        <td>
+                            C. El Risco 241, Jardines del Pedregal,
+                            Álvaro Obregón, 01900 Ciudad de México,
+                            CDMX
+                        </td>
+                        <td>55 8663 0328</td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td>astro pachuca MX</td>
+                        <td>
+                            Plaza Bella, Av Revolución 1307,
+                            Periodistas, 42060 Pachuca de Soto, Hgo.
+                        </td>
+                        <td>
+                            <a href="tel:7711270469" class="telefono-link">
+                                771 127 0469
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td>ataudes peña torres</td>
+                        <td>Pachuca de Soto, Hidalgo</td>
+                        <td>Sin teléfono registrado</td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td>AUTONATION SAPI DE C.V.</td>
+                        <td>
+                            Blvd. Felipe Ángeles No. 1521,
+                            Col. Cuesco, Pachuca de Soto,
+                            Hidalgo, C.P. 42080
+                        </td>
+                        <td>771 717 4700</td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td>AVEC</td>
+                        <td>
+                            Durango 179, Roma Nte.,
+                            Cuauhtémoc, 06700 Ciudad de México,
+                            CDMX
+                        </td>
+                        <td>55 7357 5753</td>
+                    </tr>
+
+                    <tr>
+                        <td>22</td>
+                        <td>AYUNTAMIENTO DE VILLA DE TEZONTEPEC</td>
+                        <td>
+                            Plaza Principal S/N, Col. Centro,
+                            Villa de Tezontepec, Hidalgo,
+                            C.P. 43881
+                        </td>
+                        <td>743 741 0011</td>
+                    </tr>
+
+                    <tr>
+                        <td>23</td>
+                        <td>BGD INTERNACIONAL S.A DE C.V</td>
+                        <td>
+                            Calle Alamo #120 Colonia La Noria,
+                            42186 Pachuca de Soto, Hgo.
+                        </td>
+                        <td>55 3084 4106</td>
+                    </tr>
+
+                    <tr>
+                        <td>24</td>
+                        <td>BIZNAGA RISK AND TECH S. DE R.L. DE C.V</td>
+                        <td>Pachuca de Soto, Hidalgo.</td>
+                        <td>7711296870 / 7711874886</td>
+                    </tr>
+
+                    <tr>
+                        <td>25</td>
+                        <td>BMW Grupo Planta San Luis Potosi</td>
+                        <td>
+                            Parque Industrial Desarrollo Logistik II,
+                            Blvd. BMW 655,
+                            79526 Valle de San Francisco, S.L.P
+                        </td>
+                        <td>444 710 2006</td>
+                    </tr>
+
+                    <tr>
+                        <td>26</td>
+                        <td>BOMBARDIER TRANSPORTATION SA DE CV</td>
+                        <td>
+                            Parque Industrial,
+                            Retorno El Marqués No. 4-F,
+                            76246, Qro.
+                        </td>
+                        <td>442 101 7500</td>
+                    </tr>
+
+                    <tr>
+                        <td>27</td>
+                        <td>BUCKS CONTAINER S.A DE C.V.</td>
+                        <td>
+                            Colima 25-B, Roma Nte.,
+                            Cuauhtémoc, 06700 Ciudad de México,
+                            CDMX
+                        </td>
+                        <td>55 2915 6366</td>
+                    </tr>
+
+                    <tr>
+                        <td>28</td>
+                        <td>CADENA COMERCIAL OXXO, S.A. DE C.V.</td>
+                        <td>
+                            BLVD. RAMON G. SONFIL NO. 2307,
+                            COL SANTIAGO TLAPACOYA,
+                            PACHUCA DE SOTO, HIDALGO,
+                            CP 42110
+                        </td>
+                        <td>Sin teléfono registrado</td>
+                    </tr>
+
+                    <tr>
+                        <td>29</td>
+                        <td>
+                            Calendarios y Pasatiempos La Central
+                            S.A. de C.V.
+                        </td>
+                        <td>Atitalaquia, Hidalgo.</td>
+                        <td>Sin teléfono registrado</td>
+                    </tr>
+
+                    <tr>
+                        <td>30</td>
+                        <td>calzado industrial Duramex</td>
+                        <td>
+                            Calle Manuel Gutiérrez 173,
+                            Colonia Javier Rojo Gómez,
+                            42030 Pachuca de Soto,
+                            Hidalgo, México
+                        </td>
+                        <td>771 713 2589</td>
+                    </tr>
+
+                    <tr>
+                        <td>31</td>
+                        <td>CARTON BOOM S.A. DE C.V</td>
+                        <td>
+                            Vicente Suárez 43,
+                            Revolución Mexicana,
+                            42192 San Pedro Huaquilpan, Hgo.
+                        </td>
+                        <td>
+                            <a href="tel:7716750125" class="telefono-link">
+                                771 675 0125
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>32</td>
+                        <td>CARVIFLON S.A DE C.V</td>
+                        <td>
+                            C. Efrén Rebolledo 226,
+                            Los Olivos, 42500 Actopan, Hgo.
+                        </td>
+                        <td>772 727 9576</td>
+                    </tr>
+
+                    <tr>
+                        <td>33</td>
+                        <td>CAVJUVSA SA DE CV</td>
+                        <td>
+                            C. D 21, Parque Industrial Puebla 2000,
+                            72225 Heroica Puebla de Zaragoza, Pue.
+                        </td>
+                        <td>249 160 9891</td>
+                    </tr>
+
+                    <tr>
+                        <td>34</td>
+                        <td>CEMEX OPERACIONES MEXICO</td>
+                        <td>
+                            Carretera a Atotonilco de Tula,
+                            Col. Boxfi, Vito,
+                            Atotonilco de Tula, Hidalgo,
+                            C.P. 42985
+                        </td>
+                        <td>778 735 9000</td>
+                    </tr>
+
+                    <tr>
+                        <td>35</td>
+                        <td>
+                            CENTRAL TERMOELECTRICA
+                            FRANCISCO PEREZ RIOS
+                        </td>
+                        <td>Tula de Allende Hgo.</td>
+                        <td>773 732 2480</td>
+                    </tr>
+
+                    <tr>
+                        <td>36</td>
+                        <td>
+                            CENTRO DE INVESTIGACIÓN DE MATERIALES
+                            AVANZADOS SA DE CV
+                        </td>
+                        <td>
+                            Alianza Nte. 202,
+                            66600 Cdad. Apodaca, N.L.
+                        </td>
+                        <td>81 1156 0800</td>
+                    </tr>
+
+                    <tr>
+                        <td>37</td>
+                        <td>
+                            Centro de manufactura rid
+                            s de rl de cv
+                        </td>
+                        <td>
+                            LOTE A-II FRACCION 3,
+                            Zona Industrial,
+                            43998 Cd Sahagún, Hgo.
+                        </td>
+                        <td>791 913 0205</td>
+                    </tr>
+
+                    <tr>
+                        <td>38</td>
+                        <td>
+                            Centro Interactivo Mundo Futbol
+                            S.A de C.V
+                        </td>
+                        <td>
+                            Fracción I Cluster,
+                            Camino Real de La Plata 4,
+                            Zona Plateada,
+                            42083 Pachuca de Soto, Hgo.
+                        </td>
+                        <td>771 138 3040</td>
+                    </tr>
+
+                    <tr>
+                        <td>39</td>
+                        <td>CERRO VERDE MATERIALES S.A DE C.V</td>
+                        <td>
+                            C. Sabino 110,
+                            Álamo Rustico,
+                            42184 Álamo Rustico, Hgo.
+                        </td>
+                        <td>771 262 7452</td>
+                    </tr>
+
+                    <tr>
+                        <td>40</td>
+                        <td>
+                            CFE CENTRAL TERMOELÉCTRICA
+                            CICLO COMBINADO TULA
+                        </td>
+                        <td>
+                            Carretera Jorobas–Tula Km 28,
+                            Col. El Llano, Segunda Sección,
+                            Tula de Allende, Hidalgo,
+                            C.P. 42800
+                        </td>
+                        <td>773 732 0452</td>
+                    </tr>
+
+                    <tr>
+                        <td>41</td>
+                        <td>CNH DE MÉXICO SA DE CV</td>
+                        <td>
+                            Av. 5 de Febrero No. 2117,
+                            Col. Industrial Benito Juárez,
+                            C.P. 76120/76130,
+                            Querétaro, Qro.
+                        </td>
+                        <td>442 211 9100</td>
+                    </tr>
+
+                    <tr>
+                        <td>42</td>
+                        <td>COLECCIÓN INTIMA SA DE CV</td>
+                        <td>
+                            Carretera a La Paz No. 107,
+                            Zona Industrial La Paz,
+                            C.P. 42181,
+                            Mineral de la Reforma, Hidalgo
+                        </td>
+                        <td>56 3402 8624</td>
+                    </tr>
+
+                    <tr>
+                        <td>43</td>
+                        <td>COMISIÓN FEDERAL DE ELECTRICIDAD</td>
+                        <td>
+                            José María Pino Suárez No. 603,
+                            Col. Cubitos,
+                            Pachuca de Soto, Hidalgo,
+                            C.P. 42090
+                        </td>
+                        <td>771 717 9902</td>
+                    </tr>
+
+                    <tr>
+                        <td>44</td>
+                        <td>COMISIÓN FEDERAL DE ELECTRICIDAD (CFE).</td>
+                        <td>
+                            Av. Paseo de la Reforma 164,
+                            Col. Juárez,
+                            Ciudad de México.
+                        </td>
+                        <td>Sin teléfono registrado</td>
+                    </tr>
+
+                    <tr>
+                        <td>45</td>
+                        <td>COMPAÑI MINERA AUTLAN S.A.B. DE C.V.</td>
+                        <td>
+                            Km 111, Carretera Pachuca–Tampico,
+                            Pueblo Nonoalco,
+                            C.P. 43266,
+                            Xochicoatlán, Hidalgo
+                        </td>
+                        <td>774 745 0458</td>
+                    </tr>
+
+                    <tr>
+                        <td>46</td>
+                        <td>confort y diseño mueblero</td>
+                        <td>
+                            13100 Tláhuac,
+                            Ciudad de México.
+                        </td>
+                        <td>55 5860-0058</td>
+                    </tr>
+
+                    <tr>
+                        <td>47</td>
+                        <td>
+                            Construcción y desarrollo de espacios
+                            comerciales S.A de C.V CYDECSA
+                        </td>
+                        <td>
+                            Carretera, El Carmen 836.3,
+                            55680 San Francisco Zacacalco, Méx.
+                        </td>
+                        <td>599 912 7700</td>
+                    </tr>
+
+                    <tr>
+                        <td>48</td>
+                        <td>
+                            CONSTRUCCIÓN Y DESARROLLO DE ESPACIOS
+                            COMERCIALES, S.A. DE C.V.
+                        </td>
+                        <td>
+                            Carretera, El Carmen 836.3,
+                            55680 San Francisco Zacacalco, Méx.
+                        </td>
+                        <td>599 912 7700</td>
+                    </tr>
+
+                    <tr>
+                        <td>49</td>
+                        <td>
+                            CONSTRUCCIÓN Y SOLUCIONES INTEGRALES
+                            LAZHER S.A. DE C.V
+                        </td>
+                        <td>
+                            Privada Las Aves,
+                            Mineral de la Reforma, Hidalgo
+                        </td>
+                        <td>771 713 7456</td>
+                    </tr>
+                    <tr>
+    
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</section>
 
 
 <footer>
@@ -387,6 +1005,7 @@ Elementos para realizar el informe técnico de residencia.
 
 <script src="js/navbar.js"></script>
 <script src="js/footer.js"></script>
+<script src="js/empresas.js"></script>
 
 </body>
 
